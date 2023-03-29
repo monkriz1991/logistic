@@ -196,6 +196,9 @@
     }     
 }
 @media (max-width: 520px){
+    .kinesis-desc .manuf-denmarc {
+        font-size: 11px !important;
+    }
     .container-kinesis .container {
         justify-content: center !important;
         flex-direction: column !important;
