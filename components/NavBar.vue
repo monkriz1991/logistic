@@ -2,7 +2,7 @@
     <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <NuxtLink to="/" class="logotip">
-                <strong>Frese.by</strong>
+                <strong>Frese.by / 0.1</strong>
                 <!-- <span><Icon name="ic:round-plus" /> arhiterm</span> -->
             </NuxtLink>
         </nav>
