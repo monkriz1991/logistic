@@ -11,7 +11,7 @@
 
 <style scoped>
 .logotip{
-    padding: 20px 0 20px;
+    padding: 20px 0;
 }
 .logotip>strong{
     /* color: #213b74; */
