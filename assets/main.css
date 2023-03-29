@@ -61,6 +61,10 @@
     }
 }
 @media (max-width: 910px){
+    .logotip {
+        padding: 20px 20px 20px !important;
+        display: block !important;
+    }
     .time-line .time-line-block>span {
         font-size: 15px;
         position: relative;
@@ -192,6 +196,19 @@
     }     
 }
 @media (max-width: 520px){
+    .container-kinesis .container {
+        justify-content: center !important;
+        flex-direction: column !important;
+    }
+    .container-kinesis .kinesis-desc{
+        margin: 0 0 20px 0;
+        padding: 0 10px 0;
+    }
+    .container-kinesis .kinesis-img img {
+        padding: 10% !important;
+        max-height: 235px !important;
+        margin: 20px 0 0 0;
+    }
     .time-line {
         margin: 0 0 20px !important;
     }
