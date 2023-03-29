@@ -57,7 +57,6 @@ export default defineNuxtConfig({
     css:[
         "@/node_modules/bulma/css/bulma.css",
         "@/assets/main.css",
-        '@/node_modules/swiper/css',
         '@/node_modules/@swoga/vue-collapsible-panel/dist/vue-collapsible-panel.css',
         '@/node_modules/vue3-photo-preview/dist/index.css'
     ],
