@@ -1,7 +1,7 @@
 <template>
 
         <kinesis-container class="container-kinesis " >
-           <kinesis-element 
+            <kinesis-element 
             tag="div"
             class="circle circle-blue"
             :strength="10" 
@@ -55,28 +55,28 @@
                         tag="strong"
                         :strength="10" 
                         type="depth">e</kinesis-element>
-                        <!-- <kinesis-element 
+                        <kinesis-element 
                         tag="span"
                         :strength="7" 
-                        type="depth">Балансировка и регулирование</kinesis-element> -->
+                        type="depth">Балансировка и регулирование</kinesis-element>
                         <kinesis-element 
                         tag="span"
                         :strength="10" 
                         type="depth">
-                            <!-- <VueWriter class="manuf-denmarc" :array="['Дания -> Республика Беларусь / Arhiterm /']" :typeSpeed="50" caret="cursor"/> -->
+                            <VueWriter class="manuf-denmarc" :array="['Дания -> Республика Беларусь / Arhiterm /']" :typeSpeed="50" caret="cursor"/>
                         </kinesis-element>
                         
                         </h1>
                     </kinesis-element>
                 </div>
-                <!-- <div class="kinesis-img">
+                <div class="kinesis-img">
                     <kinesis-element class="kinesis-desc-logo" :strength="5">
                             <img src="/frese-logo.webp" alt="">
                     </kinesis-element>
                     <kinesis-element :strength="5">
                         <img src="/one-img.png" alt="">
                     </kinesis-element>
-                </div> -->
+                </div>
             </div>
         </kinesis-container>
 
