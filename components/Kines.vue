@@ -1,6 +1,25 @@
+<script setup>
+    const mobileScin = ref(true)
+
+    onMounted(() => {
+        window.addEventListener("resize", (event) => {
+            if(event.target.innerWidth<=800){
+                mobileScin.value = false
+            }else{
+                mobileScin.value = true
+            }
+        })
+        if(document.documentElement.clientWidth<=800){
+            mobileScin.value = false
+        }else{
+            mobileScin.value = true
+        }
+    });
+</script>
+
 <template>
 
-        <kinesis-container class="container-kinesis ">
+        <kinesis-container class="container-kinesis " :active="mobileScin">
             <kinesis-element 
             tag="div"
             class="circle circle-blue"

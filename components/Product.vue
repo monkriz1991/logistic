@@ -20,6 +20,11 @@
                 mobileScin.value = true
             }
         })
+        if(document.documentElement.clientWidth<=800){
+            mobileScin.value = false
+        }else{
+            mobileScin.value = true
+        }
     });
     function newCard(data){
         ungGal.value = []
