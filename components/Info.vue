@@ -22,20 +22,11 @@
         :strength="-500" 
         axis="y"/>
         <div class="container">
+            <h3 class="h3">Больше Frese</h3>
             <div class="more-info">
                 <div class="more-info-block">
                     <ClientOnly>
                         <vue-collapsible-panel-group >
-                            <vue-collapsible-panel :expanded="false">
-                                <template #title>
-                                    <div>PDF</div>
-                                </template>
-                                <template #content>
-                                    <div >
-                                        Обзор продукции
-                                    </div>
-                                </template>
-                            </vue-collapsible-panel>
                             <vue-collapsible-panel :expanded="false">
                                 <template #title>
                                     <div>PDF</div>
@@ -128,7 +119,7 @@
     position: relative;
 }
 .more-info{
-    margin: 150px 0 100px;
+    margin: 50px 0 100px;
 }
 .more-info-block{
     max-width: 1050px;
@@ -141,6 +132,6 @@ border-bottom: 1px solid var(--border-color);
 }
 .more-info-block .vcpg .vcp__header {
     background: #fff !important;
-    padding: 45px 70px;
+    padding: 45px 50px;
 }
 </style>

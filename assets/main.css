@@ -13,7 +13,7 @@
   opacity: 0;
 }
 .about-info{
-    margin: 40px 0 280px;
+    margin: 40px 0 180px;
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -23,6 +23,22 @@
 .fade-enter-from,
 .fade-leave-to {
   opacity: 0;
+}
+.h3{
+    font-size: 22px;
+    font-weight: 500;
+    text-align: left;
+    margin: 60px auto 100px;
+    /* text-transform: uppercase; */
+    max-width: 600px;
+    line-height: 1.3;
+    text-orientation: upright;
+    width: 13px;
+    writing-mode: vertical-lr;
+    letter-spacing: 0px;
+    position: absolute;
+    right: 0;
+    white-space: break-spaces;
 }
 @media (max-width: 1410px){
     .time-line .time-line-block>span{
@@ -62,6 +78,18 @@
     }
 }
 @media (max-width: 1023px){
+    .h3 {
+        font-size: 17px;
+        font-weight: 700;
+        text-align: left;
+        margin: 40px 15px 20px;
+        text-transform: uppercase;
+        max-width: 600px;
+        line-height: 1.3;
+        position: relative;
+        writing-mode: unset;
+        width: auto;
+    }
     .container-kinesis {
         padding: 0% 0%!important;
         height: 90vh !important;
@@ -78,10 +106,14 @@
     }
     .container-kinesis-info {
         position: relative;
-        padding: 0 15px !important;
+        padding: 0 0px !important;
     }
     .kinesis-desc .kinesis-desc h1>span{
         font-size: 22px !important;
+    }
+    .more-info {
+        margin: 20px 0 0px !important;
+        padding: 0 15px 0;
     }
 }
 @media (max-width: 910px){
@@ -140,6 +172,9 @@
         background: #fff !important;
         padding: 35px 20px;
     }
+    .product-char .vcp__body-content {
+        padding: 20px 20px !important;
+    }
 }
 @media (max-width: 720px){
     .catalog-list-block>strong{
@@ -176,10 +211,11 @@
         top: 15px !important;
     }
     .more-info {
-        margin: 40px 0 40px !important;
+        margin: 20px 0 0px !important;
+        padding: 0 15px 0;
     }
     .slid-item {
-        padding: 10px 15px 25px !important;
+        padding: 0px 15px 25px !important;
     }
     .about-info{
         margin: 0px 0 60px;

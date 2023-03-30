@@ -17,9 +17,9 @@
     });
 </script>
 <template>
-    <div class="about-info">
+    <div class="about-info"> 
         <div class="container " >
-
+            <h3 class="h3">Путь Frese</h3>
             <div data-aos-once="true" data-aos="fade-up">
                 <div class="time-line">
                     <div class="time-line-stage">
