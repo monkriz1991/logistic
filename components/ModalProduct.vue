@@ -9,7 +9,7 @@
     <slot name="pdf-arhiterm"/>
         <slot name="link-arhiterm"/>
     <Teleport to="body">
-    <transition name="fade">
+
         <div v-show="showModal == true" class="modal-mask">
         <div class="modal-wraper" ref="myModal"  >
             <div v-click-outside="onClickOutside" class="modal-container">
@@ -24,7 +24,7 @@
             </div>
             <div class="modal-background"></div>
         </div>
-      </transition>
+
     </Teleport>
 </div>
 </template>

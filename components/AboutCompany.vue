@@ -1,3 +1,21 @@
+<script setup>
+    const mobileScin = ref(true)
+
+    onMounted(() => {
+        window.addEventListener("resize", (event) => {
+            if(event.target.innerWidth<=800){
+                mobileScin.value = false
+            }else{
+                mobileScin.value = true
+            }
+        })
+        if(document.documentElement.clientWidth<=800){
+            mobileScin.value = false
+        }else{
+            mobileScin.value = true
+        }
+    });
+</script>
 <template>
     <div class="about-info">
         <div class="container " >
@@ -8,7 +26,7 @@
                         <Icon name="mdi:checkbox-blank-circle-outline" />
                     </div>
                     <div class="time-line-cont">
-                        <kinesis-container class="time-line-block">
+                        <kinesis-container class="time-line-block" :active="mobileScin">
                             <kinesis-element 
                             tag="strong"
                             :strength="2" 

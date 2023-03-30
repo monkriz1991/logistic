@@ -53,6 +53,7 @@
     <div class="container">
         <div class="slid-item">
             <div  class="catalog-list-block">
+                <strong v-show="mobileScin==false">{{ cartProduct.name }}</strong>
                 <ClientOnly>
                     <kinesis-container class="catalog-list-img img-first" :active="mobileScin">       
                         <kinesis-element 
@@ -162,7 +163,7 @@
                             </template>
                         </ModalProduct>
                     </div>
-                    <strong>{{ cartProduct.name }}</strong>
+                    <strong v-show="mobileScin==true">{{ cartProduct.name }}</strong>
                 </div>
             </div> 
         </div>
