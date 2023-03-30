@@ -1,5 +1,5 @@
 <template>
-    <div>  
+
         <kinesis-container class="container-kinesis " >
             <kinesis-element 
             tag="div"
@@ -79,7 +79,7 @@
                 </div>
             </div>
         </kinesis-container>
-    </div>
+
 </template>
 
 

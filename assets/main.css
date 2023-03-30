@@ -196,6 +196,9 @@
     }     
 }
 @media (max-width: 520px){
+    h1{
+        text-align: center;
+    }
     .kinesis-desc .manuf-denmarc {
         font-size: 11px !important;
     }
