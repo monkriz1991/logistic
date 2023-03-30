@@ -90,10 +90,10 @@
                 </div>
                 <div class="kinesis-img">
                     <kinesis-element class="kinesis-desc-logo" :strength="5">
-                            <img src="/frese-logo.webp" alt="">
+                            <img src="/frese-logo.webp" alt="Балансировка и регулирование Frese">
                     </kinesis-element>
                     <kinesis-element :strength="5">
-                        <img src="/one-img.png" alt="">
+                        <img src="/one-img.webp" alt="">
                     </kinesis-element>
                 </div>
             </div>
