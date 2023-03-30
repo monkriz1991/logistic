@@ -201,7 +201,7 @@
             >
                 <SwiperSlide @click="newCard(item)" v-for="item in product.results" :key="item">
                     <ClientOnly>
-                        <kinesis-container  class="catalog-list-img">           
+                        <kinesis-container  class="catalog-list-img" :active="mobileScin">           
                             <kinesis-element 
                             tag="div"
                             class="catalog-list-img"

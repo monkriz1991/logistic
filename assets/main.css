@@ -15,6 +15,15 @@
 .about-info{
     margin: 40px 0 280px;
 }
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
 @media (max-width: 1410px){
     .time-line .time-line-block>span{
         width: 15%;
@@ -214,6 +223,8 @@
     }
     .kinesis-desc .manuf-denmarc {
         font-size: 11px !important;
+        max-width: 300px;
+        margin: 0 auto;
     }
     .container-kinesis .container {
         justify-content: center !important;
