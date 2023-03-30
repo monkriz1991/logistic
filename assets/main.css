@@ -54,7 +54,7 @@
 }
 @media (max-width: 1023px){
     .container-kinesis {
-        padding: 0 3% 8% !important;
+        padding: 0 0% 8% !important;
     }
     .kinesis-desc .kinesis-desc h1>span{
         font-size: 22px !important;
