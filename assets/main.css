@@ -251,4 +251,8 @@
         right: 16vw !important;
         opacity: .3;
     }
+    .container-kinesis .circle.circle-red {
+        left: 4.8vw !important;
+        top: 25%;
+    }
 }
