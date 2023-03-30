@@ -6,6 +6,7 @@
     const cartProduct = ref(0)
     const cartProductDoc = ref(0)
     const mobileScin = ref(true)
+    const arrSwiper = ref([])
     
     const { data: product } = await useFetch(config.baseURL+`catalog/product/?ordering=position&manuf=[${idFrese.value}]`)
     onMounted(() => {
@@ -26,6 +27,11 @@
             mobileScin.value = true
         }
     });
+    function SlideChange(swiper) {
+        arrSwiper.value = swiper.clickedSlide.children[0].attributes[0].nodeValue
+        arrSwiper.value = JSON.parse(arrSwiper.value)
+        newCard(arrSwiper.value)
+    }
     function newCard(data){
         ungGal.value = []
 
@@ -170,9 +176,8 @@
         <div class="slider-product">
         <div class="columns is-multiline">
             <Swiper
-                :modules="[SwiperEffectCreative, SwiperNavigation, SwiperPagination]"
-         
-                :space-between="0"
+                :modules="[SwiperEffectCreative, SwiperNavigation, SwiperPagination, SwiperA11y,SwiperMousewheel]"                
+                @click="SlideChange"
                 :loop="true"
                 :navigation="{
                     next: true,
@@ -199,10 +204,11 @@
                         slidesPerView: 4
                     }
                 }" 
+
             >
-                <SwiperSlide @click="newCard(item)" v-for="item in product.results" :key="item">
+                <SwiperSlide v-for="item in product.results" :key="item">
                     <ClientOnly>
-                        <kinesis-container  class="catalog-list-img" :active="mobileScin">           
+                        <kinesis-container v-bind:item-identity="JSON.stringify(item)" class="catalog-list-img" :active="mobileScin">           
                             <kinesis-element 
                             tag="div"
                             class="catalog-list-img"
