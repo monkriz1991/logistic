@@ -40,7 +40,7 @@ export default defineNuxtConfig({
               property: 'og:type',
               content: 'website',
             }, 
-            { hid: 'robots', name: 'robots', content: 'noindex, nofollow' },
+            // { hid: 'robots', name: 'robots', content: 'noindex, nofollow' },
             ],
             link: [
               {
@@ -53,6 +53,13 @@ export default defineNuxtConfig({
     modules: [
         'nuxt-icon',
         'nuxt-swiper',
+        [
+          'yandex-metrika-module-nuxt3',
+          {
+            id: '93020253',
+            webvisor: true,
+          }
+        ]
     ],
     css:[
         "@/node_modules/bulma/css/bulma.css",
