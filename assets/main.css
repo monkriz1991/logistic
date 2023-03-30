@@ -192,6 +192,7 @@
     .slid-item .catalog-list-block{
         flex-direction: column;
         padding: 0px 0px 0px 0px;
+        margin: 0;
     }
     .slid-item .product-links {
         margin: 0 0 0px 0px;
@@ -261,6 +262,8 @@
     }
     .time-line .time-line-block>span{
         padding: 0px 20px 15px;
+        transition-timing-function: cubic-bezier(0, 0, 0, 0 ) !important;
+        transform: translate3d(0px, 0px, 0px) !important;
     }
     .time-line .time-line-block-img {
         width: 100%;
