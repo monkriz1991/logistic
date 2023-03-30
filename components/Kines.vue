@@ -63,7 +63,7 @@
                         tag="span"
                         :strength="10" 
                         type="depth">
-                            <VueWriter class="manuf-denmarc" :array="['Дания -> Республика Беларусь / Arhiterm /']" :typeSpeed="50" caret="cursor"/>
+                            <!-- <VueWriter class="manuf-denmarc" :array="['Дания -> Республика Беларусь / Arhiterm /']" :typeSpeed="50" caret="cursor"/> -->
                         </kinesis-element>
                         
                         </h1>
