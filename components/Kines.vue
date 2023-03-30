@@ -1,7 +1,7 @@
 <template>
 
         <kinesis-container class="container-kinesis " >
-            <kinesis-element 
+            <!-- <kinesis-element 
             tag="div"
             class="circle circle-blue"
             :strength="10" 
@@ -30,7 +30,7 @@
             tag="div"
             class="circle circle-red"
             :strength="10" 
-            type="depth"/>
+            type="depth"/> -->
             <div class="container">
                 <div class="kinesis-desc">
                     <kinesis-element :strength="10">
@@ -69,14 +69,14 @@
                         </h1>
                     </kinesis-element>
                 </div>
-                <div class="kinesis-img">
+                <!-- <div class="kinesis-img">
                     <kinesis-element class="kinesis-desc-logo" :strength="5">
                             <img src="/frese-logo.webp" alt="">
                     </kinesis-element>
                     <kinesis-element :strength="5">
                         <img src="/one-img.png" alt="">
                     </kinesis-element>
-                </div>
+                </div> -->
             </div>
         </kinesis-container>
 
