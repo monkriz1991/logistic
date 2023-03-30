@@ -175,6 +175,7 @@
         min-width: 150px;
         width: 100%;
         padding: 0 5px 0;
+        
     }
     .swiper-button-next {
         right: var(--swiper-navigation-sides-offset,8px) !important;
@@ -266,6 +267,8 @@
         padding: 0 20px;
         height: 140px;
         margin: 0 0 15px;
+        transition-timing-function: cubic-bezier(0, 0, 0, 0 ) !important;
+        transform: translate3d(0px, 0px, 0px) !important;
     }
     .time-line .time-line-block>p {
         font-size: 14px;
