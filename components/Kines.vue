@@ -1,6 +1,6 @@
 <template>
 
-        <kinesis-container class="container-kinesis " >
+        <kinesis-container class="container-kinesis ">
             <kinesis-element 
             tag="div"
             class="circle circle-blue"

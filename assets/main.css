@@ -54,8 +54,20 @@
 }
 @media (max-width: 1023px){
     .container-kinesis {
-        padding: 33% 0%!important;
-        height: 100% !important;
+        padding: 0% 0%!important;
+        height: 90vh !important;
+    }
+    .darkgreenposition {
+        top: -40px !important;
+        left: 4px !important;
+    }
+    .yellowgreenposition {
+        top: -85px !important;
+        left: 6px !important;
+    }
+    .container-kinesis-info {
+        position: relative;
+        padding: 0 15px !important;
     }
     .kinesis-desc .kinesis-desc h1>span{
         font-size: 22px !important;
@@ -134,7 +146,7 @@
         margin: 40px 0 40px !important;
     }
     .slid-item {
-        padding: 50px 0 20px !important;
+        padding: 40px 10px 20px !important;
     }
     .about-info{
         margin: 0px 0 80px;

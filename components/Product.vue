@@ -5,11 +5,21 @@
     const ungGal = ref([])
     const cartProduct = ref(0)
     const cartProductDoc = ref(0)
+    const mobileScin = ref(true)
     
     const { data: product } = await useFetch(config.baseURL+`catalog/product/?ordering=position&manuf=[${idFrese.value}]`)
     onMounted(() => {
         document.documentElement.classList.remove('modal-open');
         newCard()
+    });
+    onMounted(() => {
+        window.addEventListener("resize", (event) => {
+            if(event.target.innerWidth<=800){
+                mobileScin.value = false
+            }else{
+                mobileScin.value = true
+            }
+        })
     });
     function newCard(data){
         ungGal.value = []
@@ -39,7 +49,7 @@
         <div class="slid-item">
             <div  class="catalog-list-block">
                 <ClientOnly>
-                    <kinesis-container class="catalog-list-img img-first">       
+                    <kinesis-container class="catalog-list-img img-first" :active="mobileScin">       
                         <kinesis-element 
                         tag="div"
                         class="circle darkgreenposition"
