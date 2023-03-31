@@ -46,6 +46,7 @@ export default defineNuxtConfig({
     modules: [
       '@twicpics/components/nuxt3',
       'nuxt-icon',
+      '@nuxt/image-edge',
       'nuxt-swiper',
       ['@nuxtjs/google-fonts', {
         families: {

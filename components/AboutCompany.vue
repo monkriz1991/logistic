@@ -40,7 +40,7 @@
                                 Основание компании
                             </kinesis-element>
                             <kinesis-element class="time-line-block-img" :strength="3">
-                                <img src="/history-factory-1.webp" alt="История компании Frese продолжается уже более 70 лет">
+                                <nuxt-img src="/history-factory-1.webp" sizes="sm:100px md:150px lg:200px" alt="История компании Frese продолжается уже более 70 лет"></nuxt-img>
                             </kinesis-element>
                             <p>История компании Frese продолжается уже более 70 лет и берет свое начало в 1944 году, 
                             когда Берге Фрезе (Børge Frese) основал скромный литейный цех в подвальном помещении 
@@ -69,7 +69,7 @@
                                 Расширение производства
                             </kinesis-element>
                             <kinesis-element class="time-line-block-img" :strength="3">
-                                <img src="/history-factory-2.webp" alt="В 1960-х, Frese инвестировала значительные средства в новое предприятие">
+                                <nuxt-img src="/history-factory-2.webp" sizes="sm:100px md:150px lg:200px" alt="В 1960-х, Frese инвестировала значительные средства в новое предприятие"></nuxt-img>
                             </kinesis-element>
                             <p>В 1960-х, Frese инвестировала значительные средства в новое предприятие - передовое производство по выпуску клапанов. 
                             Это было началом истории успеха, залогом которого послужили передовые технологии и автоматические клапаны, которые Frese разрабатывает и по сегодняшний день. 
@@ -98,7 +98,7 @@
                                 Мировой лидер в области динамических балансировочных клапанов
                             </kinesis-element>
                             <kinesis-element class="time-line-block-img" :strength="3">
-                                <img src="/history-factory-3.webp" alt="С момента своего основания в 1944 году">
+                                <nuxt-img src="/history-factory-3.webp" sizes="sm:100px md:150px lg:200px" alt="С момента своего основания в 1944 году"></nuxt-img>
                             </kinesis-element>
                             <p>С момента своего основания в 1944 году, Frese построила глобальную сеть, состоящую из специализированных дистрибьютериов, торговых представительств и дочерних компаний во всех уголках мира. 
                             В настоящее время компания Frese представлена почти в 50-ти странах. 

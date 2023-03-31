@@ -82,12 +82,7 @@
                         class="catalog-list-img img-first"
                         :strength="10" 
                         type="depth">
-                            <kinesis-element 
-                            tag="img"
-                            :src="cartProduct.img"
-                            :strength="10" 
-                            :alt="cartProduct.name"
-                            type="depth"/>
+                            <nuxt-img :src="cartProduct.img" :alt="cartProduct.name" sizes="sm:200px md:350px lg:400px"></nuxt-img>   
                             <kinesis-element 
                             tag="div"
                             class="catalog-list-img-bg"
@@ -114,7 +109,7 @@
                                         <ClientOnly>
                                             <photo-provider>
                                                 <photo-consumer  v-show="ungGal" v-for="src in ungGal" :intro="src" :key="src" :src="src">
-                                                <img :alt="cartProduct.name+` - thumb`" :src="src" class="view-box">
+                                                <nuxt-img :alt="cartProduct.name+` - thumb`" :src="src" sizes="sm:100px md:100px lg:100px" class="view-box"></nuxt-img>
                                                 <Icon class="modal-zoom-svg" name="akar-icons:zoom-in" />
                                                 </photo-consumer>
                                             </photo-provider>
@@ -216,12 +211,7 @@
                             class="catalog-list-img"
                             :strength="10" 
                             type="depth">
-                                <kinesis-element 
-                                tag="img"
-                                :src="item.img"
-                                :alt="item.name"
-                                :strength="10" 
-                                type="depth"/>
+                                <nuxt-img :src="item.img" :alt="item.name" sizes="sm:100px md:150px lg:200px"></nuxt-img>   
                                 <kinesis-element 
                                 tag="div"
                                 class="catalog-list-img-bg"

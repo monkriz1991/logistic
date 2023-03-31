@@ -89,10 +89,10 @@
                 </div>
                 <div class="kinesis-img">
                     <kinesis-element class="kinesis-desc-logo" :strength="5">
-                            <img src="/frese-logo.webp" alt="Балансировка и регулирование Frese">
+                            <nuxt-img src="/frese-logo.webp" sizes="sm:100px md:100px lg:100px" alt="Балансировка и регулирование Frese"></nuxt-img>
                     </kinesis-element>
                     <kinesis-element :strength="5">
-                        <img src="/one-img.webp" alt="">
+                        <nuxt-img src="/one-img.webp" sizes="sm:200px md:300px lg:400px" alt="frese-logotip"></nuxt-img>
                     </kinesis-element>
                 </div>
             </div>
