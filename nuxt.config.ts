@@ -72,14 +72,14 @@ export default defineNuxtConfig({
         '@/node_modules/@swoga/vue-collapsible-panel/dist/vue-collapsible-panel.css',
         '@/node_modules/vue3-photo-preview/dist/index.css'
     ],
-    sitemap:
-      {
-        hostname: 'https://frese.by', 
-        cacheTime: 1,
-        defaults: {
-          changefreq: 'daily',
-          priority: 1,
-          lastmod: new Date().toISOString(),
-        },
-    }   
+    // sitemap:
+    //   {
+    //     hostname: 'https://frese.by', 
+    //     cacheTime: 1,
+    //     defaults: {
+    //       changefreq: 'daily',
+    //       priority: 1,
+    //       lastmod: new Date().toISOString(),
+    //     },
+    // }   
 })
