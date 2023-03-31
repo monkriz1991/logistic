@@ -40,19 +40,19 @@ export default defineNuxtConfig({
               property: 'og:type',
               content: 'website',
             }, 
-            // { hid: 'robots', name: 'robots', content: 'noindex, nofollow' },
             ],
-            link: [
-              {
-                rel: 'stylesheet',
-                href: 'https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800'
-              }
-            ]
           },
         },
     modules: [
         'nuxt-icon',
         'nuxt-swiper',
+        ['@nuxtjs/google-fonts', {
+          families: {
+            Montserrat: [100,300,400,500,600,700,800],
+            download: true,
+            inject: true
+          }
+        }],
         [
           'yandex-metrika-module-nuxt3',
           {
@@ -67,5 +67,5 @@ export default defineNuxtConfig({
         '@/node_modules/@swoga/vue-collapsible-panel/dist/vue-collapsible-panel.css',
         '@/node_modules/vue3-photo-preview/dist/index.css'
     ],
-
+    
 })

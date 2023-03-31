@@ -6,3 +6,9 @@
         <Info/>
     </div>
 </template>
+
+<script setup>
+definePageMeta({
+  middleware: ["redirect-www"]
+})
+</script>
