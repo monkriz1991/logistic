@@ -16,6 +16,7 @@
     "@nuxtjs/google-fonts": "^3.0.0",
     "@swoga/vue-collapsible-panel": "^0.3.0",
     "@takuma-ru/vue-swipe-modal": "^4.0.7",
+    "@twicpics/components": "^0.16.1",
     "aos": "^2.3.4",
     "bulma": "^0.9.4",
     "click-outside-vue3": "^4.0.1",
