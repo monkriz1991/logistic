@@ -57,7 +57,7 @@
 </script>
 <template>
     <div class="container">
-        <h3 class="h3">Продукция</h3>
+        <h2 class="h3">Продукция</h2>
         <div class="slid-item">
             <div  class="catalog-list-block">
                 <strong v-show="mobileScin==false">{{ cartProduct.name }}</strong>
