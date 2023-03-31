@@ -114,7 +114,7 @@
                                         <ClientOnly>
                                             <photo-provider>
                                                 <photo-consumer  v-show="ungGal" v-for="src in ungGal" :intro="src" :key="src" :src="src">
-                                                <img :src="src" class="view-box">
+                                                <img :alt="cartProduct.name+` - thumb`" :src="src" class="view-box">
                                                 <Icon class="modal-zoom-svg" name="akar-icons:zoom-in" />
                                                 </photo-consumer>
                                             </photo-provider>
@@ -219,13 +219,13 @@
                                 <kinesis-element 
                                 tag="img"
                                 :src="item.img"
+                                :alt="item.name"
                                 :strength="10" 
                                 type="depth"/>
                                 <kinesis-element 
                                 tag="div"
                                 class="catalog-list-img-bg"
                                 :strength="10" 
-                                :alt="item.name"
                                 type="depth"/>
                             </kinesis-element>
                         </kinesis-container>  

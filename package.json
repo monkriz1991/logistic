@@ -20,7 +20,6 @@
     "bulma": "^0.9.4",
     "click-outside-vue3": "^4.0.1",
     "nuxt-swiper": "^1.0.1",
-    "redirect-ssl": "^3.0.0",
     "vue-kinesis": "^2.0.5",
     "vue3-photo-preview": "^0.3.0",
     "yandex-metrika-module-nuxt3": "^1.5.3"
