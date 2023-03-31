@@ -44,7 +44,6 @@ export default defineNuxtConfig({
         },
     },
     modules: [
-      '@twicpics/components/nuxt3',
       'nuxt-icon',
       '@nuxt/image-edge',
       'nuxt-swiper',
@@ -63,9 +62,6 @@ export default defineNuxtConfig({
         }
       ],
   ],
-  twicpics: {
-    domain: `https://frese.by.twic.pics`,
-  },
     css:[
         "@/node_modules/bulma/css/bulma.css",
         "@/assets/main.css",

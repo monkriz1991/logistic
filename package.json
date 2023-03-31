@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@nuxt/image-edge": "^1.0.0-28004283.2a7f5cd",
-    "nuxt": "^3.3.1",
+    "nuxt": "^3.2.0",
     "nuxt-icon": "^0.3.3",
     "vue-writer": "^1.2.0"
   },
@@ -17,7 +17,6 @@
     "@nuxtjs/google-fonts": "^3.0.0",
     "@swoga/vue-collapsible-panel": "^0.3.0",
     "@takuma-ru/vue-swipe-modal": "^4.0.7",
-    "@twicpics/components": "^0.16.1",
     "aos": "^2.3.4",
     "bulma": "^0.9.4",
     "click-outside-vue3": "^4.0.1",
