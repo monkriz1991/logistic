@@ -47,6 +47,7 @@ export default defineNuxtConfig({
       'nuxt-icon',
       '@nuxt/image-edge',
       'nuxt-swiper',
+      '@nuxt-modules/cache',
       ['@nuxtjs/google-fonts', {
         families: {
           Montserrat: [100,300,400,500,600,700,800],

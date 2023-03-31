@@ -14,6 +14,7 @@
     "vue-writer": "^1.2.0"
   },
   "dependencies": {
+    "@nuxt-modules/cache": "^0.1.0",
     "@nuxtjs/google-fonts": "^3.0.0",
     "@swoga/vue-collapsible-panel": "^0.3.0",
     "@takuma-ru/vue-swipe-modal": "^4.0.7",
