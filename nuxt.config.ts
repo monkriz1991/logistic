@@ -50,7 +50,6 @@ export default defineNuxtConfig({
     modules: [
         'nuxt-icon',
         'nuxt-swiper',
-        '@funken-studio/sitemap-nuxt-3',
         ['@nuxtjs/google-fonts', {
           families: {
             Montserrat: [100,300,400,500,600,700,800],
@@ -72,14 +71,4 @@ export default defineNuxtConfig({
         '@/node_modules/@swoga/vue-collapsible-panel/dist/vue-collapsible-panel.css',
         '@/node_modules/vue3-photo-preview/dist/index.css'
     ],
-    // sitemap:
-    //   {
-    //     hostname: 'https://frese.by', 
-    //     cacheTime: 1,
-    //     defaults: {
-    //       changefreq: 'daily',
-    //       priority: 1,
-    //       lastmod: new Date().toISOString(),
-    //     },
-    // }   
 })
