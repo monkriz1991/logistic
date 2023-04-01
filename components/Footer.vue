@@ -5,6 +5,7 @@
                 <p>
                 <strong>Frese.by</strong>
                 </p>
+                <p>.</p>
             </div>
         </footer>
     </div>
