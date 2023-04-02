@@ -91,9 +91,9 @@
                     <kinesis-element class="kinesis-desc-logo" :strength="5">
                             <nuxt-img src="/frese-logo.webp" height="40" width="180" sizes="sm:100px md:100px lg:100px" alt="Балансировка и регулирование Frese"></nuxt-img>
                     </kinesis-element>
-                    <kinesis-element :strength="5">
+                    <!-- <kinesis-element :strength="5">
                         <nuxt-img src="/one-img.webp" height="490" width="330" sizes="sm:200px md:300px lg:400px" alt="frese-logotip"></nuxt-img>
-                    </kinesis-element>
+                    </kinesis-element> -->
                 </div>
             </div>
         </kinesis-container>
