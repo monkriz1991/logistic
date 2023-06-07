@@ -1,34 +1,3 @@
-<template>
-<div>
-    
-    <button @click="showModalFun" class="button is-medium is-warning  r-50">
-        <span class="icon">
-            <Icon class="modal-b-svg" name="material-symbols:open-with-rounded" />
-        </span>  
-    </button>
-    <slot name="pdf-arhiterm"/>
-        <slot name="link-arhiterm"/>
-    <Teleport to="body">
-
-        <div v-show="showModal == true" class="modal-mask">
-        <div class="modal-wraper" ref="myModal"  >
-            <div v-click-outside="onClickOutside" class="modal-container">
-
-              <div class="modal-header">
-                <slot name="headModal" :events="{ showModalFun }"/>
-              </div>
-              <div class="modal-body">
-                <slot name="body"/>
-              </div>
-            </div>
-            </div>
-            <div class="modal-background"></div>
-        </div>
-
-    </Teleport>
-</div>
-</template>
-  
 <script setup>
     const showModal = ref(false)
     const myModal = ref(0)
@@ -65,3 +34,32 @@
         }
     }
 </script>
+
+<template>
+    <div>
+        <button @click="showModalFun" class="button is-medium is-warning  r-50">
+            <span class="icon">
+                <Icon class="modal-b-svg" name="material-symbols:open-with-rounded" />
+            </span>  
+        </button>
+        <slot name="pdf-arhiterm"/>
+        <slot name="link-arhiterm"/>
+        <Teleport to="body">
+            <div v-show="showModal == true" class="modal-mask">
+                <div class="modal-wraper" ref="myModal"  >
+                    <div v-click-outside="onClickOutside" class="modal-container">
+
+                        <div class="modal-header">
+                            <slot name="headModal" :events="{ showModalFun }"/>
+                        </div>
+                        <div class="modal-body">
+                            <slot name="body"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-background"></div>
+            </div>
+        </Teleport>
+    </div>
+</template>
+  
