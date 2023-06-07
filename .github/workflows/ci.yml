@@ -36,5 +36,5 @@ jobs:
           command: |
             cd /var/www/www-root/data/www/frese.by/frese
             nvm use v16.19.1
-            npm run build && npm run generate
+            npm run build
             pm2 restart santex
