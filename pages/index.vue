@@ -1,8 +1,8 @@
 <template>
-    <div>
-        <kines/>
-        <AboutCompany/>
+  <div>
+    <kines />
+    <!-- <AboutCompany/>
         <Product/>
-        <Info/>
-    </div>
+        <Info/> -->
+  </div>
 </template>
