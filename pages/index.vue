@@ -3,6 +3,6 @@
     <kines />
     <AboutCompany />
     <Product />
-    <Info />
+    <!-- <Info /> -->
   </div>
 </template>
