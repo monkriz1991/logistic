@@ -17,7 +17,7 @@ export default defineNuxtConfig({
       },
       meta: [
         { charset: "utf-8" },
-        { name: "yandex-verification", content: "56b4df5279a6bb79" },
+        { name: "yandex-verification", content: "602208f4759967e2" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         { hid: "description", name: "description", content: "Frese" },
         {
