@@ -117,7 +117,7 @@ onMounted(() => {
                 УСПЕЙТЕ ЗАКАЗАТЬ ПО АКЦИИ!
                 <strong>139 <span>руб*</span></strong>
               </kinesis-element>
-              <!-- <FormUser /> -->
+              <FormUser />
 
               <span>*Цена действительна при покупке курса</span>
             </div>

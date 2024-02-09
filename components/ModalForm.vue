@@ -63,7 +63,7 @@ function onClickOutside(event, el) {
             </div>
             <div class="form-modal-body">
               <div class="form-modal">
-                <!-- <FormUser /> -->
+                <FormUser />
               </div>
             </div>
           </div>
