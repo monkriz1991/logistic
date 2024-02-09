@@ -26,7 +26,7 @@ function handleScroll(el) {
 function onClickOutside(event, el) {
   count.value++;
   if (event.target.className == "modal-wraper") {
-    if (showModal.value == true && count.value > 1) {
+    if (showModal.value == true && count.value >= 1) {
       showModal.value = false;
       document.documentElement.classList.remove("modal-open");
       count.value = 0;

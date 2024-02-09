@@ -25,8 +25,9 @@ function handleScroll(el) {
 }
 function onClickOutside(event, el) {
   count.value++;
+  console.log(count.value);
   if (event.target.className == "modal-wraper") {
-    if (showModal.value == true && count.value > 1) {
+    if (showModal.value == true && count.value >= 1) {
       showModal.value = false;
       document.documentElement.classList.remove("modal-open");
       count.value = 0;
@@ -45,7 +46,10 @@ function onClickOutside(event, el) {
     <Teleport to="body">
       <div v-show="showModal == true" class="modal-mask">
         <div class="modal-wraper" ref="myModal">
-          <div v-click-outside="onClickOutside" class="modal-container">
+          <div
+            v-click-outside="onClickOutside"
+            class="modal-container modal-form-margin"
+          >
             <div class="modal-header">
               <div class="hero is-primary">
                 <div class="hero-body">

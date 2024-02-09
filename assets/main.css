@@ -942,7 +942,7 @@
   }
   .how-accept-desc > p {
     line-height: 1.5;
-    font-size: 15px;
+    font-size: 16px;
   }
   .form-info {
     margin: 60px auto 40px;
@@ -1095,12 +1095,22 @@
   .product-char .vcp__body-content {
     padding: 20px 20px !important;
   }
+  .modal-form-margin {
+    margin: 120px 10px 20px !important;
+  }
+  .form-modal {
+    margin: 60px 40px;
+  }
 }
 @media (max-width: 720px) {
   .footer {
     background-color: #ffffff;
-    padding: 4rem 1.5rem 4rem;
+    padding: 5rem 1.5rem 1rem;
     font-size: 13px;
+  }
+  .more-info-how > strong {
+    font-size: 17px;
+    width: 300px;
   }
   .index-b-modal {
     font-size: 15px;
@@ -1137,7 +1147,20 @@
   }
   .hero-body .title {
     padding: 0 25px 0 0 !important;
-    font-size: 17px !important;
+    font-size: 24px !important;
+  }
+  .product-desc p {
+    margin: 0 0 10px;
+    font-size: 15px;
+  }
+  .is-large.delete,
+  .is-large.modal-close {
+    height: 42px;
+    max-height: 42px;
+    max-width: 42px;
+    min-height: 42px;
+    min-width: 42px;
+    width: 42px;
   }
   .modal-header button.delete {
     right: 15px !important;
@@ -1171,7 +1194,7 @@
   }
   .swiper-button-next,
   .swiper-button-prev {
-    top: var(--swiper-navigation-top-offset, 300px) !important;
+    top: var(--swiper-navigation-top-offset, 270px) !important;
   }
   .slid-item .brightgreencolor {
     display: none;
@@ -1191,7 +1214,7 @@
     z-index: 22;
   }
   .swiper-pagination {
-    top: 280px !important;
+    top: 250px !important;
   }
   .city-span {
     font-size: 14px;

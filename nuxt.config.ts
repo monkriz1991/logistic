@@ -87,7 +87,7 @@ export default defineNuxtConfig({
   // },
   image: {
     aliyun: {
-      baseURL: "https://leptigenslim.ru/",
+      baseURL: "http://localhost:3000/",
     },
   },
 });
