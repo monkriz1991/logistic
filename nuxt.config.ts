@@ -65,13 +65,13 @@ export default defineNuxtConfig({
         },
       },
     ],
-    // [
-    //   "yandex-metrika-module-nuxt3",
-    //   {
-    //     id: "",
-    //     webvisor: true,
-    //   },
-    // ],
+    [
+      "yandex-metrika-module-nuxt3",
+      {
+        id: "96420735",
+        webvisor: true,
+      },
+    ],
   ],
   css: [
     "@/node_modules/bulma/css/bulma.css",
