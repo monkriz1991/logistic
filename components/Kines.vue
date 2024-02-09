@@ -145,7 +145,7 @@ onMounted(() => {
         </kinesis-element>
       </div>
       <div class="kinesis-img">
-        <kinesis-element class="kinesis-desc-logo" :strength="5">
+        <!-- <kinesis-element class="kinesis-desc-logo" :strength="5">
           <ClientOnly>
             <video
               class="video-index"
@@ -161,7 +161,7 @@ onMounted(() => {
               <source class="video-sourse" src="" type="video/mp4" />
             </video>
           </ClientOnly>
-        </kinesis-element>
+        </kinesis-element> -->
         <kinesis-element :strength="5">
           <div class="img-index-one">
             <NuxtImg
