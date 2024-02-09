@@ -115,8 +115,11 @@ onMounted(() => {
             <div data-aos-once="true" data-aos="fade-up">
               <kinesis-element :strength="8" type="depth" tag="h4">
                 УСПЕЙТЕ ЗАКАЗАТЬ ПО АКЦИИ!
+                <strong>139 <span>руб*</span></strong>
               </kinesis-element>
               <FormUser />
+
+              <span>*Цена действительна при покупке курса</span>
             </div>
           </div>
         </div>

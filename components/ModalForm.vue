@@ -39,6 +39,8 @@ function onClickOutside(event, el) {
   <div>
     <div class="kinesis-button" @click="showModalFun">
       <button class="button index-b-modal">Заказать</button>
+      <strong>139 <span>руб*</span></strong>
+      <span>*Цена действительна при покупке курса</span>
     </div>
     <Teleport to="body">
       <div v-show="showModal == true" class="modal-mask">
