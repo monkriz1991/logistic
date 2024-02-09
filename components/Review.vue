@@ -1,18 +1,17 @@
 <script setup>
-const config = useRuntimeConfig();
-const route = useRoute();
-const idFrese = ref(43);
 const ungGal = ref([]);
 const cartProduct = ref(0);
-const cartProductDoc = ref(0);
 const mobileScin = ref(true);
 const arrSwiper = ref([]);
+const arrProduct = ref([]);
 
-const { data: product } = await useFetch(
-  "https://new.arhiterm.by/" +
-    `catalog/product/?ordering=position&manuf=[${idFrese.value}]`
+const { data: product } = await useAsyncData("myObject", () =>
+  queryContent("/").find()
 );
 
+if (product.value && product.value.length > 0) {
+  arrProduct.value = product.value[0].results;
+}
 onMounted(() => {
   document.documentElement.classList.remove("modal-open");
   newCard();
@@ -33,38 +32,38 @@ onMounted(() => {
 });
 function SlideChange(swiper) {
   arrSwiper.value = swiper.clickedSlide.children[0].attributes[0].nodeValue;
+
   arrSwiper.value = JSON.parse(arrSwiper.value);
+
   newCard(arrSwiper.value);
 }
 function newCard(data) {
   ungGal.value = [];
-
   if (data == undefined) {
-    cartProduct.value = product.value.results[0];
-    if ((cartProductDoc.value = product.value.results[0].docs[0])) {
-      cartProductDoc.value = product.value.results[0].docs[0].doc;
-    }
-    ungGal.value.push(product.value.results[0].img);
-    ungGal.value.push(product.value.results[0].images[0].img);
+    cartProduct.value = arrProduct.value[0];
+    ungGal.value.push(arrProduct.value[0].img);
   } else {
     cartProduct.value = data;
-    if ((cartProductDoc.value = data.docs[0])) {
-      cartProductDoc.value = data.docs[0].doc;
-    }
-    if (data.images.length) {
-      ungGal.value.push(data.images[0].img);
-    }
     ungGal.value.push(data.img);
   }
+
+  // ungGal.value.push(product.value.img);
 }
 </script>
+
 <template>
   <div class="container">
-    <h2 class="h3">Продукция</h2>
+    <h2 class="h3">Результат применения</h2>
     <div class="slid-item">
       <div class="catalog-list-block">
-        <strong v-show="mobileScin == false">{{ cartProduct.name }}</strong>
         <ClientOnly>
+          <div v-if="mobileScin == false" class="city-span">
+            <strong>{{ cartProduct.name }}</strong>
+            <span>
+              <Icon name="solar:city-broken" />{{ cartProduct.city }}</span
+            >
+            <span>{{ cartProduct.preview }}</span>
+          </div>
           <kinesis-container
             class="catalog-list-img img-first"
             :active="mobileScin"
@@ -87,11 +86,12 @@ function newCard(data) {
             </kinesis-element>
             <kinesis-element
               tag="div"
-              class="catalog-list-img img-first"
+              class="catalog-list-img-kines"
               :strength="10"
               type="depth"
             >
               <nuxt-img
+                provider="aliyun"
                 :src="cartProduct.img"
                 :alt="cartProduct.name"
                 sizes="sm:200px md:350px lg:400px"
@@ -112,8 +112,15 @@ function newCard(data) {
           </kinesis-container>
         </ClientOnly>
         <div class="catalog-list-block-desc">
+          <ClientOnly>
+            <strong v-if="mobileScin == true">{{ cartProduct.name }}</strong>
+            <span v-if="mobileScin == true" class="city-span">
+              <Icon name="solar:city-broken" />{{ cartProduct.city }}</span
+            >
+            <span v-if="mobileScin == true">{{ cartProduct.preview }}</span>
+          </ClientOnly>
           <div class="product-links">
-            <ModalProduct :product="cartProduct">
+            <ModalProduct>
               <template v-slot:headModal="{ events: { showModalFun } }">
                 <div class="hero is-primary">
                   <div class="hero-body">
@@ -131,6 +138,7 @@ function newCard(data) {
                             :src="src"
                           >
                             <NuxtImg
+                              provider="aliyun"
                               :alt="cartProduct.name + ` - thumb`"
                               :src="src"
                               sizes="sm:100px md:100px lg:100px"
@@ -160,50 +168,49 @@ function newCard(data) {
               </template>
             </ModalProduct>
           </div>
-          <strong v-show="mobileScin == true">{{ cartProduct.name }}</strong>
         </div>
       </div>
     </div>
     <div class="slider-product">
       <div class="columns is-multiline">
-        <Swiper
-          :modules="[
-            SwiperEffectCreative,
-            SwiperNavigation,
-            SwiperPagination,
-            SwiperA11y,
-            SwiperMousewheel,
-          ]"
-          @click="SlideChange"
-          :loop="true"
-          :navigation="{
-            next: true,
-            prev: true,
-          }"
-          :pagination="{ clickable: true, dynamicBullets: true }"
-          :creative-effect="{
-            prev: {
-              shadow: false,
-              translate: ['-20%', 0, -1],
-            },
-            next: {
-              translate: ['100%', 0, 0],
-            },
-          }"
-          :breakpoints="{
-            300: {
-              slidesPerView: 2,
-            },
-            680: {
-              slidesPerView: 3,
-            },
-            1650: {
-              slidesPerView: 4,
-            },
-          }"
-        >
-          <SwiperSlide v-for="item in product.results" :key="item">
-            <ClientOnly>
+        <ClientOnly>
+          <Swiper
+            :modules="[
+              SwiperEffectCreative,
+              SwiperNavigation,
+              SwiperPagination,
+              SwiperA11y,
+              SwiperMousewheel,
+            ]"
+            @click="SlideChange"
+            :loop="true"
+            :navigation="{
+              next: true,
+              prev: true,
+            }"
+            :pagination="{ clickable: true, dynamicBullets: true }"
+            :creative-effect="{
+              prev: {
+                shadow: false,
+                translate: ['-20%', 0, -1],
+              },
+              next: {
+                translate: ['100%', 0, 0],
+              },
+            }"
+            :breakpoints="{
+              300: {
+                slidesPerView: 2,
+              },
+              680: {
+                slidesPerView: 3,
+              },
+              1650: {
+                slidesPerView: 4,
+              },
+            }"
+          >
+            <SwiperSlide v-for="item in arrProduct" :key="item">
               <kinesis-container
                 v-bind:item-identity="JSON.stringify(item)"
                 class="catalog-list-img"
@@ -216,6 +223,7 @@ function newCard(data) {
                   type="depth"
                 >
                   <NuxtImg
+                    provider="aliyun"
                     :src="item.img"
                     :alt="item.name"
                     sizes="sm:100px md:150px lg:200px"
@@ -230,13 +238,12 @@ function newCard(data) {
                   />
                 </kinesis-element>
               </kinesis-container>
-            </ClientOnly>
-            <div class="catalog-list-desc-slide">
-              <span v-if="item.name.length < 65">{{ item.name }}</span>
-              <span v-else>{{ item.name.substring(0, 50) + ".." }}</span>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+              <div class="catalog-list-desc-slide">
+                <span>{{ item.name }}</span>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </ClientOnly>
       </div>
     </div>
   </div>

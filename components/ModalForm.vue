@@ -37,26 +37,28 @@ function onClickOutside(event, el) {
 
 <template>
   <div>
-    <button
-      @click="showModalFun"
-      class="button is-medium is-warning r-50 button-more"
-    >
-      <span class="icon">
-        <Icon class="modal-b-svg" name="solar:square-top-down-broken" />
-      </span>
-      <span class="span-info">Читать подробнее ...</span>
-    </button>
-    <slot name="pdf-arhiterm" />
-    <slot name="link-arhiterm" />
+    <div class="kinesis-button" @click="showModalFun">
+      <button class="button index-b-modal">Заказать</button>
+    </div>
     <Teleport to="body">
       <div v-show="showModal == true" class="modal-mask">
         <div class="modal-wraper" ref="myModal">
           <div v-click-outside="onClickOutside" class="modal-container">
             <div class="modal-header">
-              <slot name="headModal" :events="{ showModalFun }" />
+              <div class="hero is-primary">
+                <div class="hero-body">
+                  <p class="title">Офромить заказ</p>
+                  <button
+                    @click="showModalFun"
+                    class="delete is-large"
+                  ></button>
+                </div>
+              </div>
             </div>
-            <div class="modal-body">
-              <slot name="body" />
+            <div class="form-modal-body">
+              <div class="form-modal">
+                <FormUser />
+              </div>
             </div>
           </div>
         </div>
