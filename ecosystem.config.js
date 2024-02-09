@@ -1,12 +1,12 @@
 module.exports = {
-    apps: [
-      {
-        name: 'santex',
-        exec_mode: 'cluster',
-        instances: 'max', //
-        script: './node_modules/nuxt/bin/nuxt.mjs',
-        args: 'start',
-        port: 8830
-      }
-    ]
-  }
+  apps: [
+    {
+      name: "meridian",
+      exec_mode: "cluster",
+      instances: 1,
+      script: "./node_modules/nuxt/bin/nuxt.mjs",
+      args: "start",
+      port: 8830,
+    },
+  ],
+};

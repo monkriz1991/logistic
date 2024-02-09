@@ -79,16 +79,15 @@ export default defineNuxtConfig({
     "@/node_modules/@swoga/vue-collapsible-panel/dist/vue-collapsible-panel.css",
     "@/node_modules/vue3-photo-preview/dist/index.css",
   ],
-  build: {},
-  routeRules: {
-    "/": { prerender: true },
-  },
-  vite: {
-    optimizeDeps: {},
-  },
+  // routeRules: {
+  //   "/": { prerender: true },
+  // },
+  // vite: {
+  //   optimizeDeps: {},
+  // },
   image: {
     aliyun: {
-      baseURL: "http://localhost:3000/",
+      baseURL: "https://leptigenslim.ru/",
     },
   },
 });
