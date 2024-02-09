@@ -6,6 +6,7 @@ node_modules
 .output
 .env
 .github
+.github/*
 dist
 .DS_Store
 package-lock.json
