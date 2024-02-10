@@ -11,29 +11,29 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Leptigen Meridian Diet",
+      title: "Logistic",
       htmlAttrs: {
         lang: "ru",
       },
       meta: [
         { charset: "utf-8" },
-        { name: "yandex-verification", content: "602208f4759967e2" },
+        { name: "yandex-verification", content: "" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "Frese" },
+        { hid: "description", name: "description", content: "Logistic" },
         {
           hid: "og:title",
           property: "og:title",
-          content: "Leptigen Meridian Diet",
+          content: "Logistic",
         },
         {
           hid: "og:description",
           property: "og:description",
-          content: "Leptigen Meridian Diet",
+          content: "Logistic",
         },
         {
           hid: "og:url",
           property: "og:url",
-          content: `https://frese.by`,
+          content: `https://`,
         },
         {
           hid: "og:locale",
@@ -68,7 +68,7 @@ export default defineNuxtConfig({
     [
       "yandex-metrika-module-nuxt3",
       {
-        id: "96420735",
+        id: "",
         webvisor: true,
       },
     ],
@@ -79,15 +79,9 @@ export default defineNuxtConfig({
     "@/node_modules/@swoga/vue-collapsible-panel/dist/vue-collapsible-panel.css",
     "@/node_modules/vue3-photo-preview/dist/index.css",
   ],
-  // routeRules: {
-  //   "/": { prerender: true },
-  // },
-  // vite: {
-  //   optimizeDeps: {},
-  // },
   image: {
     aliyun: {
-      baseURL: "https://leptigenslim.ru/",
+      baseURL: " http://localhost:3000/",
     },
   },
 });

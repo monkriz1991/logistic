@@ -52,15 +52,22 @@ onMounted(() => {
           <div data-aos-once="true" data-aos="fade-up">
             <div class="how-accept">
               <div class="how-accept-img">
-                <img src="/box.jpg" alt="" />
+                <NuxtImg
+                  provider="aliyun"
+                  src="/gruz-na.png"
+                  sizes="sm:400px md:400px lg:400px"
+                  alt="!"
+                  loading="lazy"
+                  format="wepb"
+                />
               </div>
               <div class="how-accept-desc">
                 <kinesis-element :strength="6" type="depth" tag="strong">
-                  Как принимать Leptigen Meridian?
+                  Преимущества работы с нами!
                 </kinesis-element>
                 <kinesis-element :strength="8" type="depth" tag="p">
-                  По 2 капсулы 2 раза в день запивая 100мл воды, применять за 30
-                  минут до еды.
+                  Оптимизируем логистику наших клиентов и сохраняем совершенный
+                  подход в решении логистических задач любой сложности.
                 </kinesis-element>
               </div>
             </div>
@@ -69,7 +76,7 @@ onMounted(() => {
       </div>
 
       <div class="container">
-        <h3 class="h3">Как заказать</h3>
+        <h3 class="h3">Как заказать услугу</h3>
         <div class="more-info">
           <div data-aos-once="true" data-aos="fade-up">
             <div class="columns is-multiline">
@@ -81,31 +88,33 @@ onMounted(() => {
                   <div class="icon-how">
                     <Icon name="solar:notification-unread-lines-linear" />
                   </div>
-                  <strong>Вы оставляете заявку на нашем сайте</strong>
+                  <strong>Вы направляете нам запрос на перевозку</strong>
                 </div>
               </div>
               <div class="column is-3">
                 <div class="more-info-how">
                   <div class="icon-how">
-                    <Icon name="solar:call-chat-rounded-broken" />
+                    <Icon name="solar:square-forward-linear" />
                   </div>
-                  <strong>Менеджер перезванивает для оформления заказа</strong>
+                  <strong>Мы делаем Вам лучшее предложение</strong>
                 </div>
               </div>
               <div class="column is-3">
                 <div class="more-info-how">
                   <div class="icon-how">
-                    <Icon name="solar:box-broken" />
+                    <Icon name="solar:document-add-broken" />
                   </div>
-                  <strong>Мы отправляем Ваш заказ почтой</strong>
+                  <strong
+                    >Мы оформляем с Вами договор и заказ на перевозку</strong
+                  >
                 </div>
               </div>
               <div class="column is-3">
                 <div class="more-info-how">
                   <div class="icon-how">
-                    <Icon name="solar:wallet-money-broken" />
+                    <Icon name="solar:routing-3-broken" />
                   </div>
-                  <strong>Вы оплачиваете заказ при получении</strong>
+                  <strong>Мы организуем перевозку Вашего груза</strong>
                 </div>
               </div>
             </div>
@@ -114,12 +123,9 @@ onMounted(() => {
           <div class="form-info">
             <div data-aos-once="true" data-aos="fade-up">
               <kinesis-element :strength="8" type="depth" tag="h4">
-                УСПЕЙТЕ ЗАКАЗАТЬ ПО АКЦИИ!
-                <strong>139 <span>руб*</span></strong>
+                НАЧНЁМ СОТРУДНИЧАТЬ!
               </kinesis-element>
               <FormUser />
-
-              <span>*Цена действительна при покупке курса</span>
             </div>
           </div>
         </div>

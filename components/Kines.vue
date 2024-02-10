@@ -63,89 +63,54 @@ onMounted(() => {
               >L</kinesis-element
             >
             <kinesis-element tag="strong" :strength="9" type="depth"
-              >e</kinesis-element
+              >o</kinesis-element
             >
             <kinesis-element tag="strong" :strength="8" type="depth"
-              >p</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="9" type="depth"
-              >t</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="10" type="depth"
-              >i</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="9" type="depth"
               >g</kinesis-element
             >
-            <kinesis-element tag="strong" :strength="8" type="depth"
-              >e</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="9" type="depth"
-              >n</kinesis-element
-            >
-            &ensp;
-            <kinesis-element tag="strong" :strength="9" type="depth"
-              >M</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="8" type="depth"
-              >e</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="7" type="depth"
-              >r</kinesis-element
-            >
             <kinesis-element tag="strong" :strength="9" type="depth"
               >i</kinesis-element
             >
             <kinesis-element tag="strong" :strength="10" type="depth"
-              >d</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="8" type="depth"
-              >i</kinesis-element
+              >s</kinesis-element
             >
             <kinesis-element tag="strong" :strength="9" type="depth"
-              >a</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="7" type="depth"
-              >n</kinesis-element
-            >
-            &ensp;
-            <kinesis-element tag="strong" :strength="10" type="depth"
-              >D</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="9" type="depth"
-              >i</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="8" type="depth"
-              >e</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="6" type="depth"
               >t</kinesis-element
             >
+            <kinesis-element tag="strong" :strength="8" type="depth"
+              >i</kinesis-element
+            >
+            <kinesis-element tag="strong" :strength="9" type="depth"
+              >c</kinesis-element
+            >
+            &ensp;
+          </h1>
+          <div class="kinesis-desc-info">
             <kinesis-element tag="span" :strength="7" type="depth"
-              >Бедра становятся стройнее, живот подтягивается, уходит целлюлит и
-              лишний вес!</kinesis-element
+              >Организуем перевозку Вашего груза по лучшей цене и в кратчайшие
+              сроки.</kinesis-element
             >
             <kinesis-element tag="span" :strength="10" type="depth">
-              <Icon class="index-icon-one" name="solar:health-broken" />
+              <Icon class="index-icon-one" name="carbon:delivery" />
               <VueWriter
                 class="index-writer-one"
                 :array="[
-                  'Содержит самые мощные антиоксиданты!',
-                  'Выводит ядовитые вещества, токсины, жир, которые не выводятся сами!',
-                  'Предотвращает ожирение внутренних органов!',
+                  'Опыт и эффективность в доставке!',
+                  'Максимальная скорость при минимальной стоимости!',
+                  'Оптимизация доставки без лишних издержек!',
                 ]"
                 :typeSpeed="50"
                 caret="cursor"
               />
             </kinesis-element>
-          </h1>
+          </div>
           <ClientOnly v-if="mobileScin == true">
             <ModalForm />
           </ClientOnly>
         </kinesis-element>
       </div>
       <div class="kinesis-img">
-        <kinesis-element class="kinesis-desc-logo" :strength="5">
+        <!-- <kinesis-element class="kinesis-desc-logo" :strength="5">
           <ClientOnly>
             <video
               class="video-index"
@@ -161,13 +126,13 @@ onMounted(() => {
               <source class="video-sourse" src="" type="video/mp4" />
             </video>
           </ClientOnly>
-        </kinesis-element>
+        </kinesis-element> -->
         <kinesis-element :strength="5">
           <div class="img-index-one">
             <NuxtImg
               provider="aliyun"
-              src="/assets/product.png"
-              alt="MERIDIAN"
+              src="/fleet-trucks.png"
+              alt="trucks"
               loading="lazy"
               format="wepb"
             />

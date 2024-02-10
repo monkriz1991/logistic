@@ -4,7 +4,7 @@
 
     <AboutCompany />
 
-    <Review />
+    <!-- <Review /> -->
     <Info />
   </div>
 </template>

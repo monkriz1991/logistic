@@ -19,7 +19,7 @@ onMounted(() => {
 <template>
   <div class="about-info">
     <div class="container">
-      <h2 class="h3">Что такое «Leptigen Meridian Diet»</h2>
+      <h2 class="h3">Что мы делаем</h2>
       <div data-aos-once="true" data-aos="fade-up">
         <div class="time-line">
           <div class="time-line-stage">
@@ -30,12 +30,12 @@ onMounted(() => {
               <kinesis-element tag="strong" :strength="2" type="depth">
               </kinesis-element>
               <kinesis-element tag="span" :strength="2" type="depth">
-                О препарате
+                Автоперевозки
               </kinesis-element>
               <kinesis-element class="time-line-block-img" :strength="3">
                 <NuxtImg
                   provider="aliyun"
-                  src="/leptigen-m-n.jpg"
+                  src="/avto-gruz.jpg"
                   sizes="sm:400px md:400px lg:400px"
                   alt="MERIDIAN"
                   loading="lazy"
@@ -43,11 +43,9 @@ onMounted(() => {
                 />
               </kinesis-element>
               <p>
-                «Leptigen Meridian Diet» - новая программа похудения,
-                направленная на борьбу со всеми факторами, приводящими к набору
-                избыточной массы тела. В составе капсул есть натуральные
-                микроэлементы, которые нормализуют выработку лептина и помогают
-                сигналам о насыщении как можно быстрее дойти до мозга.
+                Организовываем международные перевозки на автотранспорте полными
+                машинами (FTL) и в составе сборных грузов (LTL). Мы работаем в
+                странах ЕС, Центральной Азии, Китая и внутри РФ.
               </p>
             </kinesis-container>
           </div>
@@ -63,24 +61,21 @@ onMounted(() => {
               <kinesis-element tag="strong" :strength="2" type="depth">
               </kinesis-element>
               <kinesis-element tag="span" :strength="2" type="depth">
-                Принцип работы
+                Проектная логистика
               </kinesis-element>
               <kinesis-element class="time-line-block-img" :strength="3">
                 <NuxtImg
                   provider="aliyun"
-                  src="/gormon-sytosti-leptin.jpg"
+                  src="/trans_log.jpg"
                   alt="Принцип работы"
                   loading="lazy"
                   format="wepb"
                 />
               </kinesis-element>
               <p>
-                Лептин — это гормон, который помогает регулировать аппетит. Он
-                посылает сигналы в ваш мозг, когда вы наедаетесь и больше не
-                нуждаетесь в пище. Однако из-за «невосприимчивости лептина» этот
-                сигнал зачастую не достигает вашего мозга. В итоге вы едите
-                больше, даже если ваш организм уже сыт. Новая формула блокировки
-                жира борется с резистентностью к лептину.
+                Готовые отраслевые решения для перевозки крупногабаритных
+                грузов. Специалисты компании составят транспортные маршруты с
+                учетом оптимальной стоимости и скорости доставки.
               </p>
             </kinesis-container>
           </div>
@@ -96,12 +91,12 @@ onMounted(() => {
               <kinesis-element tag="strong" :strength="2" type="depth">
               </kinesis-element>
               <kinesis-element tag="span" :strength="2" type="depth">
-                Если Вы склонны к полноте - этот препарат для вас!
+                Отрасли
               </kinesis-element>
               <kinesis-element class="time-line-block-img" :strength="3">
                 <NuxtImg
                   provider="aliyun"
-                  src="/image-box.webp"
+                  src="/komb-log.jpg"
                   sizes="sm:400px md:400px lg:400px"
                   alt="Если Вы склонны к полноте - этот препарат для вас!"
                   loading="lazy"
@@ -109,11 +104,11 @@ onMounted(() => {
                 />
               </kinesis-element>
               <p>
-                Препарат представлен в виде капсул, рекомендованных для
-                пошагового применения в домашних условиях в течение семи дней.
-                Благодаря быстрому метаболизму у людей, принимающих "Leptigen
-                Meridian Diet" подкожный жир в проблемных зонах может сгорать со
-                скоростью до 800 грамм в сутки!
+                Организовываем перевозки товаров народного потребления, таких
+                как продукты питания, бытовая химия, скоропортящиеся продукты и
+                т.д. Мы понимаем, что важно для бизнеса FMCG, и адаптировали
+                наши решения с учетом специфики перевозки продуктов и других
+                грузов
               </p>
             </kinesis-container>
           </div>

@@ -25,7 +25,6 @@ function handleScroll(el) {
 }
 function onClickOutside(event, el) {
   count.value++;
-  console.log(count.value);
   if (event.target.className == "modal-wraper") {
     if (showModal.value == true && count.value >= 1) {
       showModal.value = false;
@@ -34,14 +33,17 @@ function onClickOutside(event, el) {
     }
   }
 }
+const ClosedModal = () => {
+  showModal.value = false;
+  document.documentElement.classList.remove("modal-open");
+  count.value = 0;
+};
 </script>
 
 <template>
   <div>
     <div class="kinesis-button" @click="showModalFun">
-      <button class="button index-b-modal">Заказать</button>
-      <strong>139 <span>руб*</span></strong>
-      <span>*Цена действительна при покупке курса</span>
+      <button class="button index-b-modal">Отправить заявку</button>
     </div>
     <Teleport to="body">
       <div v-show="showModal == true" class="modal-mask">
@@ -51,9 +53,9 @@ function onClickOutside(event, el) {
             class="modal-container modal-form-margin"
           >
             <div class="modal-header">
-              <div class="hero is-primary">
+              <div class="hero is-link">
                 <div class="hero-body">
-                  <p class="title">Офромить заказ</p>
+                  <p class="title">Опишите Ваш запрос:</p>
                   <button
                     @click="showModalFun"
                     class="delete is-large"
@@ -63,7 +65,7 @@ function onClickOutside(event, el) {
             </div>
             <div class="form-modal-body">
               <div class="form-modal">
-                <FormUser />
+                <FormUser @ClosedModal="ClosedModal" />
               </div>
             </div>
           </div>
