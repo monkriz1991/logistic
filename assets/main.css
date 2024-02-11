@@ -652,14 +652,36 @@
   top: 50px;
 }
 .modal-succes {
-  background: #333;
+  background: #b4e3a7;
   padding: 40px;
   border-radius: 18px;
   position: fixed;
   z-index: 99999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  float: left;
+  top: 80px;
+  left: 0;
+  right: 0;
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+}
+.modal-succes strong {
+  float: left;
+  width: 100%;
+  margin: 0 0 10px;
+  font-size: 21px;
+}
+.modal-succes p {
+  float: left;
+  width: 100%;
+  font-size: 15px;
+}
+.modal-succes .delete {
+  float: left;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 .product-links {
   margin: 20px 0 15px 25px;
@@ -892,6 +914,9 @@
 .form-info .control .icon > .icon {
   padding: 7px;
 }
+.form-info .control .icon.is-right > .icon {
+  color: #df9898;
+}
 .catalog-list-img-kines {
   height: 360px;
 }
@@ -928,6 +953,24 @@
   width: 100%;
   margin: 15px 0 0;
   font-size: 14px;
+}
+.footer-info {
+  padding: 0px 0 20px;
+}
+.footer-info-phone {
+  padding: 0px 0 10px;
+}
+.footer-info-phone a {
+  font-size: 19px;
+  color: #333;
+  font-weight: 800;
+}
+
+.footer-info-phone span {
+  margin: 0 0 0 5px;
+  font-weight: 700;
+}
+.footer-info-email {
 }
 @media (max-width: 1410px) {
   .time-line .time-line-block > span {
@@ -1049,7 +1092,13 @@
   }
   .navbar-info {
     display: block;
-    padding: 15px 20px 0px 10px;
+    padding: 15px 10px 0px 0px;
+  }
+  .navbar-info-phone a {
+    font-size: 15px;
+  }
+  .navbar-info-phone span {
+    font-size: 13px;
   }
   .navbar-info-phone {
     float: right;
@@ -1135,7 +1184,7 @@
   }
   .container-kinesis .kinesis-img img {
     padding: 0% !important;
-    max-height: 280px !important;
+    max-height: 260px !important;
     margin: 0px 0 0 0 !important;
     -o-object-fit: contain;
     object-fit: contain;
@@ -1162,10 +1211,10 @@
     padding: 20px 20px !important;
   }
   .modal-form-margin {
-    margin: 120px 10px 20px !important;
+    margin: 40px 10px 20px !important;
   }
   .form-modal {
-    margin: 60px 40px;
+    margin: 40px 40px;
   }
 }
 @media (max-width: 720px) {
@@ -1179,7 +1228,7 @@
     width: 300px;
   }
   .index-b-modal {
-    font-size: 15px;
+    font-size: 14px;
     padding: 13px 32px;
   }
   .catalog-list-block > strong {
@@ -1212,8 +1261,16 @@
     padding: 20px 20px !important;
   }
   .hero-body .title {
-    padding: 0 25px 0 0 !important;
-    font-size: 24px !important;
+    padding: 10px 25px 10px 0 !important;
+    font-size: 18px !important;
+    margin: 0;
+  }
+  form .input {
+    font-size: 15px !important;
+  }
+  form .control .icon {
+    height: 40px !important;
+    width: 44px !important;
   }
   .product-desc p {
     margin: 0 0 10px;

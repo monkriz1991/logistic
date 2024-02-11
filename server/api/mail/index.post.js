@@ -19,7 +19,7 @@ export default defineEventHandler(async (event, response) => {
       to: config.CONTACTMAIL,
       subject: body.username,
       text: body.username,
-      html: `Заказчик:${body.username} Телефон:${body.phone} Тип груза:${body.type} Размер:${body.size} Откуда:${body.from} Куда:${body.to}`,
+      html: `Заказчик:${body.username} / Телефон:${body.phone} / Тип груза:${body.type} / Тонаж:${body.size} / Откуда:${body.from} / Куда:${body.to}`,
     };
     await transporter.sendMail(mail);
   } catch (event) {

@@ -60,30 +60,27 @@ onMounted(() => {
         <kinesis-element :strength="10">
           <h1>
             <kinesis-element tag="strong" :strength="10" type="depth"
-              >L</kinesis-element
+              >B</kinesis-element
             >
             <kinesis-element tag="strong" :strength="9" type="depth"
-              >o</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="8" type="depth"
-              >g</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="9" type="depth"
-              >i</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="10" type="depth"
-              >s</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="9" type="depth"
-              >t</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="8" type="depth"
-              >i</kinesis-element
-            >
-            <kinesis-element tag="strong" :strength="9" type="depth"
-              >c</kinesis-element
+              >m</kinesis-element
             >
             &ensp;
+            <kinesis-element tag="strong" :strength="8" type="depth"
+              >C</kinesis-element
+            >
+            <kinesis-element tag="strong" :strength="9" type="depth"
+              >a</kinesis-element
+            >
+            <kinesis-element tag="strong" :strength="10" type="depth"
+              >r</kinesis-element
+            >
+            <kinesis-element tag="strong" :strength="9" type="depth"
+              >g</kinesis-element
+            >
+            <kinesis-element tag="strong" :strength="8" type="depth"
+              >o</kinesis-element
+            >
           </h1>
           <div class="kinesis-desc-info">
             <kinesis-element tag="span" :strength="7" type="depth"
