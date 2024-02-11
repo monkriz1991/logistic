@@ -81,7 +81,7 @@ export default defineNuxtConfig({
   ],
   image: {
     aliyun: {
-      baseURL: " http://localhost:3000/",
+      baseURL: "https://bmcargo.ru/",
     },
   },
 });
