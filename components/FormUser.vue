@@ -16,7 +16,22 @@ const handleLogin = async () => {
   myName.value.classList.remove("is-danger");
   myPhone.value.classList.remove("is-danger");
   if (form.value.username != "" && form.value.phone != "") {
-    modalSucces.value = true;
+    myButton.value.classList.add("is-loading");
+    const { data: responseData } = await useFetch("/api/mail/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json; charset=UTF-8",
+      },
+      body: form.value,
+    });
+    if (responseData) {
+      emit("ClosedModal", false);
+      myButton.value.classList.remove("is-loading");
+      myName.value.classList.remove("is-danger");
+      myPhone.value.classList.remove("is-danger");
+      modalSucces.value = true;
+      form.value = {};
+    }
   } else {
     if (form.value.username == "") {
       myName.value.classList.add("is-danger");
@@ -24,22 +39,6 @@ const handleLogin = async () => {
     if (form.value.phone == "") {
       myPhone.value.classList.add("is-danger");
     }
-  }
-  myButton.value.classList.add("is-loading");
-  const { data: responseData } = await useFetch("/api/mail/", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json; charset=UTF-8",
-    },
-    body: form.value,
-  });
-  if (responseData) {
-    emit("ClosedModal", false);
-    // modalSucces.value = true
-    myButton.value.classList.remove("is-loading");
-    myName.value.classList.remove("is-danger");
-    myPhone.value.classList.remove("is-danger");
-    form.value = {};
   }
 };
 </script>

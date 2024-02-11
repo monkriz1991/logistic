@@ -11,7 +11,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: "Logistic",
+      title: "BM CARGO - Доставим Ваш груз по СНГ и Европе",
       htmlAttrs: {
         lang: "ru",
       },
@@ -19,21 +19,32 @@ export default defineNuxtConfig({
         { charset: "utf-8" },
         { name: "yandex-verification", content: "" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
-        { hid: "description", name: "description", content: "Logistic" },
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "Организуем перевозку Вашего груза по лучшей цене и в кратчайшие сроки.",
+        },
         {
           hid: "og:title",
           property: "og:title",
-          content: "Logistic",
+          content: "BM CARGO Logistic",
         },
         {
           hid: "og:description",
           property: "og:description",
-          content: "Logistic",
+          content:
+            "Организуем перевозку Вашего груза по лучшей цене и в кратчайшие сроки.",
         },
         {
           hid: "og:url",
           property: "og:url",
-          content: `https://`,
+          content: `https://bmcargo.ru/`,
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content: `https://bmcargo.ru/gruz-na.png`,
         },
         {
           hid: "og:locale",
