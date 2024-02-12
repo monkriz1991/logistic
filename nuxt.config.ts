@@ -79,7 +79,7 @@ export default defineNuxtConfig({
     [
       "yandex-metrika-module-nuxt3",
       {
-        id: "",
+        id: "96436629",
         webvisor: true,
       },
     ],
